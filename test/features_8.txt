@@ -1,0 +1,16 @@
+  set=genes
+Traceback:
+  File "/home/chixu/isoform/Snakefile", line 143, in check_result
+(ballgown) [chixu@lubi4 isoform]$ snakemake --profile lsens -r -n normal/genes/ki67-best.feature
+Building DAG of jobs...
+InputFunctionException in line 160 of /home/chixu/isoform/Snakefile:
+Error:
+  TypeError: list indices must be integers or slices, not str
+Wildcards:
+  which=normal
+  set=genes
+Traceback:
+  File "/home/chixu/isoform/Snakefile", line 144, in check_result
+(ballgown) [chixu@lubi4 isoform]$
+(ballgown) [chixu@lubi4 isoform]$ snakemake --profile lsens -r -n normal/genes/ki67-best.feature
+Building DAG of jobs...

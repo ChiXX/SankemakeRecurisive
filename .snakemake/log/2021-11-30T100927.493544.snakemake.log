@@ -1,0 +1,161 @@
+Building DAG of jobs...
+Updating job final_features_report.
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count    min threads    max threads
+---------------------  -------  -------------  -------------
+final_features_report        1              1              1
+select_features              1              1              1
+total                        2              1              1
+
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_1.txt
+    output: test/features_2.txt
+    jobid: 3
+    wildcards: test=test, run_n=2
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 3.
+1 of 2 steps (50%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_2.txt
+    output: test/features_3.txt
+    jobid: 5
+    wildcards: test=test, run_n=3
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 5.
+2 of 3 steps (67%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_3.txt
+    output: test/features_4.txt
+    jobid: 7
+    wildcards: test=test, run_n=4
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 7.
+3 of 4 steps (75%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_4.txt
+    output: test/features_5.txt
+    jobid: 9
+    wildcards: test=test, run_n=5
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 9.
+4 of 5 steps (80%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_5.txt
+    output: test/features_6.txt
+    jobid: 11
+    wildcards: test=test, run_n=6
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 11.
+5 of 6 steps (83%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_6.txt
+    output: test/features_7.txt
+    jobid: 13
+    wildcards: test=test, run_n=7
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 13.
+6 of 7 steps (86%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_7.txt
+    output: test/features_8.txt
+    jobid: 15
+    wildcards: test=test, run_n=8
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 15.
+7 of 8 steps (88%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_8.txt
+    output: test/features_9.txt
+    jobid: 17
+    wildcards: test=test, run_n=9
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 17.
+8 of 9 steps (89%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+checkpoint select_features:
+    input: test/features_9.txt
+    output: test/features_10.txt
+    jobid: 19
+    wildcards: test=test, run_n=10
+    resources: tmpdir=/tmp
+Downstream jobs will be updated after completion.
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 19.
+9 of 10 steps (90%) done
+Updating job final_features_report.
+Select jobs to execute...
+
+[Tue Nov 30 10:09:28 2021]
+rule final_features_report:
+    input: test/features_10.txt
+    output: test/final_features.txt
+    jobid: 0
+    wildcards: test=test
+    resources: tmpdir=/tmp
+
+[Tue Nov 30 10:09:28 2021]
+Finished job 0.
+10 of 10 steps (100%) done
+Complete log: /data/xu_data/recurisive/.snakemake/log/2021-11-30T100927.493544.snakemake.log

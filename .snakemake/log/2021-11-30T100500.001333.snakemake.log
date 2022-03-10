@@ -1,0 +1,9 @@
+Building DAG of jobs...
+Updating job final_features_report.
+InputFunctionException in line 29 of /data/xu_data/recurisive/Snakefile:
+Error:
+  NameError: name 'i_run_n' is not defined
+Wildcards:
+  test=test
+Traceback:
+  File "/data/xu_data/recurisive/Snakefile", line 23, in check_if_final_features

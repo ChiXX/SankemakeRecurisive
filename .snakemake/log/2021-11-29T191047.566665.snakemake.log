@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in line 29 of /data/xu_data/recurisive/Snakefile:
+Error:
+  TypeError: get() takes 1 positional argument but 2 were given
+Wildcards:
+  test=test
+Traceback:
+  File "/data/xu_data/recurisive/Snakefile", line 21, in check_if_final_features

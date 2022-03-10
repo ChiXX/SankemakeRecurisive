@@ -1,0 +1,9 @@
+Building DAG of jobs...
+InputFunctionException in line 30 of /data/xu_data/recurisive/Snakefile:
+Error:
+  WorkflowError:
+    Missing wildcard values for test
+Wildcards:
+  test=test
+Traceback:
+  File "/data/xu_data/recurisive/Snakefile", line 22, in check_if_final_features
